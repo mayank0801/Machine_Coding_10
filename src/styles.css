@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-spacing: 0;
+  /* // margin: 0; */
+  /* padding: 0; */
+}
+table {
+  border-collapse: collapse;
+}
+
+.App {
+  /* width: 90%;
+  margin: 0 auto; */
+  font-family: sans-serif;
+  display: flex;
+
+  /* text-align: center; */
+}
+.App > nav {
+  width: 20%;
+  position: fixed;
+  left: 0;
+  min-width: 300px;
+  background-color: #1f2023;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.App > main {
+  margin-left: 300px;
+  width: 80%;
+  margin-top: 1rem;
+  padding-left: 2rem;
+}
+/*ProductHeader Component*/
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.btn-new {
+  border: none;
+  background-color: blue;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*Products*/
+thead {
+  background-color: #eff0ef;
+  padding: 1rem;
+}
+
+.product-container {
+  border-bottom: 1px solid black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+form > button {
+  color: white;
+  background-color: blue;
+  padding: 0.3rem 0;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* */
+.productCategory-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.category-container {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.category-container > p {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.dashBoard-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.container {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-info1 > :first-child {
+  color: green;
+  font-weight: 800;
+}
+.container-info1,
+.container-info2,
+.container-info3 > :last-child {
+  color: black;
+  font-weight: 800;
+}
+.container-info2 > :first-child {
+  color: #fea814;
+  font-weight: 800;
+}
+.container-info3 > :first-child {
+  color: red;
+  font-weight: 800;
+}
+
+/* Header */
+.navcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.nav_item {
+  text-decoration: none;
+  color: #5f5f5f;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.active {
+  color: white;
+}
+
+.product-detailcontainer {
+}
+.product-detailcontainer > h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.product-detailcontainer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-detailcontainer > div > img {
+  width: 50%;
+  margin-bottom: 1rem;
+  height: 300px;
+}
+.product-detailcontainer > div > p {
+  align-self: flex-start;
+}
+.product-detailcontainer > div > p > span {
+  font-weight: 600;
+  padding-right: 0.5rem;
+  padding-bottom: 20px;
+}
+
+/*Products*/
+th {
+  padding: 0.3rem;
+}
+td > img {
+  cursor: pointer;
+}
+tr {
+  /* display: block; */
+  /* padding-bottom: 20px; */
+  padding: 0.2rem !important;
+
+  border-bottom: 1px solid #f0f0f0 !important;
+  border-right: 1px solid #f0f0f0 !important;
+  border-left: 3px solid #f0f0f0 !important;
+  text-align: center;
+}
+
+.newForm {
+  width: 500px;
+  border: 1px solid black;
+  padding: 1rem;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+.newForm > form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (width<=800px) {
+  .App {
+    flex-direction: column;
+  }
+  .App > nav {
+    width: 100%;
+    /* min-width: 300px; */
+    background-color: #1f2023;
+    height: 60px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* padding: 0.5rem; */
+    /* padding-left: 3rem; */
+    display: block;
+  }
+  .navcontainer {
+    display: block;
+    width: 100%;
+  }
+  .nav_item {
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+  .App > main {
+    width: 90%;
+
+    margin: 70px auto;
+  }
+}
